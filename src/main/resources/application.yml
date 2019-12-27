@@ -1,0 +1,4 @@
+
+logging:
+  file: logs/log.log
+  level.org.springframework.web: DEBUG
