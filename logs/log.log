@@ -922,3 +922,59 @@ java.lang.ClassNotFoundException: com.away.springboot01.springboottest.Springboo
 2019-12-27 16:24:15.317 DEBUG 9760 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
 2019-12-27 16:24:15.319 DEBUG 9760 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2019-12-27 16:24:45.129  INFO 9760 --- [Thread-68] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 17:37:52.678  INFO 8096 --- [restartedMain] c.a.s.s.HelloSpringbootApplication       : Starting HelloSpringbootApplication on away with PID 8096 (started by away in D:\workspace\my projects\codes\hello-springboot)
+2019-12-27 17:37:52.680  INFO 8096 --- [restartedMain] c.a.s.s.HelloSpringbootApplication       : No active profile set, falling back to default profiles: default
+2019-12-27 17:37:52.724  INFO 8096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-27 17:37:52.724  INFO 8096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-27 17:37:53.184  INFO 8096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 17:37:53.185  INFO 8096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 17:37:53.200  INFO 8096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2019-12-27 17:37:53.558  INFO 8096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-27 17:37:53.574  INFO 8096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-27 17:37:53.574  INFO 8096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-12-27 17:37:53.642  INFO 8096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-27 17:37:53.642 DEBUG 8096 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-12-27 17:37:53.642  INFO 8096 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 918 ms
+2019-12-27 17:37:53.702 DEBUG 8096 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-12-27 17:37:53.794  INFO 8096 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 17:37:53.800 DEBUG 8096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-12-27 17:37:53.836 DEBUG 8096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2019-12-27 17:37:53.843  INFO 8096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-27 17:37:53.851 DEBUG 8096 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-12-27 17:37:53.857 DEBUG 8096 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-12-27 17:37:54.138  INFO 8096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-27 17:37:54.172  INFO 8096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-27 17:37:54.174  INFO 8096 --- [restartedMain] c.a.s.s.HelloSpringbootApplication       : Started HelloSpringbootApplication in 1.711 seconds (JVM running for 2.65)
+2019-12-27 17:38:05.153  INFO 8096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-27 17:38:05.153  INFO 8096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-27 17:38:05.153 DEBUG 8096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-12-27 17:38:05.157 DEBUG 8096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-12-27 17:38:05.157  INFO 8096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2019-12-27 17:38:05.162 DEBUG 8096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2019-12-27 17:38:05.166 DEBUG 8096 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.away.springboot01.springboottest.HelloSpringbootApplication.sayHi()
+2019-12-27 17:38:05.177 DEBUG 8096 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2019-12-27 17:38:05.268 DEBUG 8096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-12-27 17:41:16.609  INFO 8096 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-27 17:41:16.919  INFO 8096 --- [restartedMain] c.a.s.s.HelloSpringbootApplication       : Starting HelloSpringbootApplication on away with PID 8096 (started by away in D:\workspace\my projects\codes\hello-springboot)
+2019-12-27 17:41:16.919  INFO 8096 --- [restartedMain] c.a.s.s.HelloSpringbootApplication       : No active profile set, falling back to default profiles: default
+2019-12-27 17:41:17.254  INFO 8096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-12-27 17:41:17.254  INFO 8096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-27 17:41:17.256  INFO 8096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+2019-12-27 17:41:17.383  INFO 8096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-27 17:41:17.384  INFO 8096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-27 17:41:17.385  INFO 8096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-12-27 17:41:17.403  INFO 8096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-27 17:41:17.403 DEBUG 8096 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-12-27 17:41:17.403  INFO 8096 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 480 ms
+2019-12-27 17:41:17.438 DEBUG 8096 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-12-27 17:41:17.465  INFO 8096 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-27 17:41:17.468 DEBUG 8096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-12-27 17:41:17.474 DEBUG 8096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2019-12-27 17:41:17.477  INFO 8096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-27 17:41:17.480 DEBUG 8096 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-12-27 17:41:17.483 DEBUG 8096 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-12-27 17:41:17.547  INFO 8096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-27 17:41:17.559  INFO 8096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-27 17:41:17.560  INFO 8096 --- [restartedMain] c.a.s.s.HelloSpringbootApplication       : Started HelloSpringbootApplication in 0.688 seconds (JVM running for 206.036)
+2019-12-27 17:41:17.562  INFO 8096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-12-27 17:41:34.527  INFO 8096 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
