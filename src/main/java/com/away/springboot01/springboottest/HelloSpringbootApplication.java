@@ -6,14 +6,12 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 @Controller
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-public class SpringboottestApplication {
+public class HelloSpringbootApplication {
 
 
     @RequestMapping(value = "",method = RequestMethod.GET)
@@ -52,7 +50,7 @@ public class SpringboottestApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringboottestApplication.class, args);
+        SpringApplication.run(HelloSpringbootApplication.class, args);
         Object o = new Object();
         String str = o.toString();
         System.out.println("这是我新建的Object对象"+str);
