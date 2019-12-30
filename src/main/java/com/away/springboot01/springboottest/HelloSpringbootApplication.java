@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.HashMap;
 
@@ -15,7 +16,7 @@ public class HelloSpringbootApplication {
 
 
     @RequestMapping(value = "",method = RequestMethod.GET)
-    public String sayHi(){
+    public ModelAndView sayHi(){
         HashMap map = new HashMap();
         Thread t1 = new Thread(){
 
@@ -46,7 +47,10 @@ public class HelloSpringbootApplication {
         t1.start();
         t2.start();
         System.out.println(map);
-        return "index";
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("index");
+        modelAndView.addObject("");
+        return modelAndView;
     }
 
     public static void main(String[] args) {
