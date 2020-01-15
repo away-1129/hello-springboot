@@ -2,3 +2,5 @@
 logging:
   file: logs/log.log
   level.org.springframework.web: DEBUG
+server:
+  port: 80
