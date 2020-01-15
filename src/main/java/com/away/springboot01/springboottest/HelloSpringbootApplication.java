@@ -57,7 +57,7 @@ public class HelloSpringbootApplication {
         SpringApplication.run(HelloSpringbootApplication.class, args);
         Object o = new Object();
         String str = o.toString();
-        System.out.println("这是我新建的Object对象"+str);
+        System.out.println("这是我新建的Object对象测试"+str);
 
 
 
