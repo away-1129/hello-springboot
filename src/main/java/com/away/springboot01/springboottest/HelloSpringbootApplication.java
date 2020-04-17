@@ -1,5 +1,6 @@
 package com.away.springboot01.springboottest;
 
+import com.away.springboot01.springboottest.entity.Person;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -19,14 +20,14 @@ public class HelloSpringbootApplication {
     public ModelAndView sayHi(){
         HashMap map = new HashMap();
         Thread t1 = new Thread(){
-
+            StringBuffer buffer = new StringBuffer();
             @Override
             public synchronized void run() {
-
                 for (int i=1;i<=10;i++){
                     map.put("a"+i,i);
+                    buffer.append(i);
                     //System.out.println(map);11
-                    System.out.println("线程1启动次数："+i);
+                    System.out.println(buffer+"线程1启动次数："+i);
 
                 }
             }
@@ -34,12 +35,14 @@ public class HelloSpringbootApplication {
 
 
         Thread t2 = new Thread(){
+            StringBuilder builder = new StringBuilder();
             @Override
             public synchronized void run() {
                 for (int i=1;i<=10;i++){
                     map.put("b"+i,i);
+                    builder.append(i);
                     //System.out.println(map);
-                    System.out.println("线程2启动次数111："+i);
+                    System.out.println(builder+"线程2启动次数111："+i);
                 }
 
             }
@@ -59,9 +62,22 @@ public class HelloSpringbootApplication {
         String str = o.toString();
         System.out.println("这是我新建的Object对象测试"+str);
 
+        Person person = new Person();
+        person.setAge(11);
+        person.setName("away");
+        System.out.println(person);
+
+        change(person);
+        System.out.println(person);
 
 
 
+
+    }
+
+    public static void change(Person person){
+            person.setName("abc");
+            person.setAge(22);
     }
 
 
