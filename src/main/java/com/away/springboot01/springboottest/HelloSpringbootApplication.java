@@ -27,7 +27,7 @@ public class HelloSpringbootApplication {
                     map.put("a"+i,i);
                     buffer.append(i);
                     //System.out.println(map);11
-                    System.out.println(buffer+"线程1启动次数："+i);
+                    System.out.println(buffer+"线程1启2341动次数："+i);
 
                 }
             }
